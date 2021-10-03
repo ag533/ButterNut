@@ -1,0 +1,246 @@
+/* Colors */
+/*
+Blue (Primary): #1e5d84
+Blue (Lighter Shade): #5d92b8
+Pink: #f2c4c4
+Red: #d2322e
+Grey (Lighter i.e Background): #f7f5f3
+Grey (Darker i.e Text): #9c9896
+*/
+
+@font-face {
+  font-family: everything;
+  src: url('../src/assets/fonts/GT-Pressura-Regular.woff2');
+}
+
+@font-face {
+  font-family: button;
+  src: url('../src/assets/fonts/GTPressuraMono.woff2');
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #258ea6;
+}
+
+.form-wrapper {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #F7F5F3;
+  font-family: 'everything';
+}
+
+.outer-form {
+  width: 80%;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  border: 2.5px solid #5d92b8;
+  border-radius: 3px;
+  padding-left: 10px;
+  background: white;
+  margin-top: 50px;
+}
+
+.phone-img-div {
+  width: 7%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.phone-img {
+  width: 70%;
+  height: 40px;
+  position: relative;
+}
+
+.form {
+  width: 83%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form input {
+  width: 70%;
+  height: 100%;
+  color: #1e5d84;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 27px;
+  background: white;
+}
+
+.form label {
+  position: absolute;
+  bottom: 2.5px;
+  left:0px;
+  width: 98.5%;
+  height: 90%;
+  pointer-events: none;
+  border-radius: 10px;
+  color: #5d92b8;
+  font-size: 25px;
+  border: none;
+}
+
+.form label::after {
+  content: '';
+  position: absolute;
+  bottom: -1.5px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name{
+  transform: translateY(-5%);
+  font-size: 20px;
+  color: #5d92b8;
+  bottom: 25px;
+  left: 5px;
+}
+
+.validation-image-div {
+  width: 6%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.validation-img {
+  width: 80%;
+  height: 20px;
+  position: relative;
+}
+
+.error-div {
+  width: 85%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.error-image-div {
+  width: 6%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 8px;
+}
+
+.error-img {
+  width: 80%;
+  height: 20px;
+  position: relative;
+}
+
+.error-content {
+  font-size: 25px;
+  color: #d2322e;
+  padding-right: 15px;
+}
+
+.info-div {
+  width: 85%;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.info-image-div {
+  width: 6%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 8px;
+}
+
+.info-img {
+  width: 80%;
+  height: 20px;
+  position: relative;
+  bottom: 14px
+}
+
+.info-content {
+  font-size: 25px;
+  color: #9c9896;
+  padding-right: 15px;
+}
+
+.submit-button-div {
+  width: 85%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.submit-button {
+  width: 60%;
+  height: 70px;
+  font-size: 25px;
+  font-family: 'button';
+  color: white;
+  background: #1e5d84;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+}
