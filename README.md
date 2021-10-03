@@ -4,7 +4,7 @@
 
 ### Thoughts and missing parts due to 2.5hr time constraint are also defined in the individual README.md
 
-### Time distributing
+### Time distribution
 
 1.  Server side - 45 min.
     1.  API design - 30 min.
