@@ -28,4 +28,4 @@
 
 ## Work not done due to time constraint
 
-1. Formating the number with spacing.
+1. Formating the number with spacing - This can be done by simply using regex expression to match and call a function to add spacing whenever a number is added in the input field.
