@@ -1,4 +1,4 @@
-# Phone Nuumber Task.
+# Phone Number Task.
 
 ## All the steps to install and setup are defined in each project README.md
 
